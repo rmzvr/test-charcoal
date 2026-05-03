@@ -1,7 +1,0 @@
-name: Check push
-on: [push, workflow_dispatch]
-jobs:
-  check:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "OK"
