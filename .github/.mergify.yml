@@ -1,3 +1,6 @@
+merge_protections_settings:
+  reporting_method: check-runs
+
 merge_protections:
   - name: Block merging stacked branches to non-main
     if:
