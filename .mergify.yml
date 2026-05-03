@@ -3,5 +3,5 @@ pull_request_rules:
     conditions:
       - base != main
     actions:
-      post_comment:
+      comment:
         message: "Cannot merge — this is a stacked branch. Merge the bottom branch to main first."
