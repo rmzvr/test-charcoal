@@ -1,0 +1,7 @@
+pull_request_rules:
+  - name: Block merging stacked branches to non-main
+    conditions:
+      - base != main
+    actions:
+      post_comment:
+        message: "Cannot merge — this is a stacked branch. Merge the bottom branch to main first."
