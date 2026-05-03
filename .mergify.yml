@@ -1,5 +1,12 @@
-pull_request_rules:
+merge_protections:
   - name: Block merging stacked branches to non-main
+    if:
+      - base != main
+    success_conditions:
+      - base = main
+
+pull_request_rules:
+  - name: Comment on stacked branch PRs
     conditions:
       - base != main
     actions:
